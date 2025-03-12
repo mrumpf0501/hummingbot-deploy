@@ -21,7 +21,6 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./bots/credentials:/bots/credentials
       - ./bots:/backend-api/bots
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
