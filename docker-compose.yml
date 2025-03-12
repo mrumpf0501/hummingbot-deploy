@@ -21,6 +21,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
+      - ./bots/conf/controllers:/bots/conf/controllers
       - ./bots:/backend-api/bots
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
