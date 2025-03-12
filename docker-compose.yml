@@ -23,6 +23,7 @@ services:
     volumes:
       - ./bots/conf/controllers:/bots/conf/controllers
       - ./bots:/backend-api/bots
+      - ./bots/credentials:/bots/credentials
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - BROKER_HOST=emqx
