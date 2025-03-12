@@ -26,6 +26,7 @@ services:
       - ./bots/conf/controllers:/bots/conf/controllers
       - ./bots:/backend-api/bots
       - ./bots/archived:/bots/archived
+      - ./bots/data:/bots/data
       - ./bots/credentials:/bots/credentials
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
