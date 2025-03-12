@@ -11,8 +11,8 @@ services:
         - BACKEND_API_USERNAME=admin
         - BACKEND_API_PASSWORD=admin
     volumes:
-      - ./credentials.yml:/home/dashboard/credentials.yml
-      - ./pages:/home/dashboard/frontend/pages
+      - ./credentials.yml:/credentials.yml
+      - ./pages:/pages
     networks:
         - emqx-bridge
   backend-api:
