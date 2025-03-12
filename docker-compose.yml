@@ -21,6 +21,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
+      - ./bots/credentials/master_account:/bots/credentials/master_account
       - ./bots/conf/controllers:/bots/conf/controllers
       - ./bots:/backend-api/bots
       - ./bots/credentials:/bots/credentials
